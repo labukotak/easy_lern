@@ -1,0 +1,55 @@
+llkode:									keterangan:
+-------------------------------------------------------------------------------------------------------------------------------------------
+git --version								                    :melihat versi git
+clear									                        :menghapus perintah sebelumnya
+git init								                        :menandai repository file kita
+git add 8ketik-nama-file8						                :menambahkan file ketempat staging area
+git add .								                        :menambahkan file ketempat staging area semua yang ada
+git status								                        :melihat status repository file kita
+git commit								                        :untuk mengcommit
+git commit -m	"ketik-pesanya"					               	:menambahkan pesan untuk keterangan pesan yang di ubah
+git commit -am "ketik-pesanya"					            	:digunakan ketika memodifikasi isi file
+git config								                        :untuk mamasukan configurasi
+git branch								                        :mengecek daftar nama brach
+git help								                        :tutorial singkat dalam command
+pwd									                            :print working directory(melihat directory yang dipakai saat ini)
+ls									                            :untuk melihat isi dalam file(directory)
+git rm --cached 8ketik-nama-file8					            :untuk mengeluarkan file dari staging area
+//catatan jika ingin khusus ripo tertentu ketik "local"
+git config --global user.name "ketik-nama-user-github"			:untuk memasukan nama pengguna
+git config --global user.email "ketik-email-github"			    :untuk memasukan email pengguna
+git log									                        :untuk mengecek commit apa saja yang sudah di gunakan
+git log 8-- ketik nama file dan ekstensinya8				    :untuk mencari perubahan yang spesifik
+git checkout 8lima code hash8 8-- ketik nama file dan ekstensinya8	:untuk mengembalikan history yang di inginkan
+git checkout 8ketik-nama-branch8					            :untuk berpindah branch(cabang)
+git branch 8ketik-nama-branch8						            :untuk membuat branch(cabang)
+git log --all --decorate --oneline --graph			        	:untuk mengecek branch(cabang)
+alias graph="git log --all --decorate --oneline --graph"		:snappath nya
+git merge 8ketik-nama-cabang8						            :untuk menggabungkan branch yang di inginkan
+git branch --merged							                    :untuk mengecek branch mana yang sudah di gabung
+git branch -d 8ketik-nama-branch8				            	:untuk menghapus branch yang sudah tidak di pakai (catatan: D besar beati paksa hapus)
+git checkout -b 8ketik-nama-branch8                             :membuat branch sekaligus menggunakan
+
+//menyingkronkan git hub dengan git
+git config --list						                       	:mengecek akun mana yang di pakai
+git clone 8paste httpsnya8				                		:digunakan untuk mengclone repo di github
+git remote							                        	:mengecek nama remotnya default(origin)
+git remote -v					                    			:melihat alamat remote(github)
+git push						                        		:mengirimkan perubahan ke remote
+git fetch						                        		:mengecek updatean data baru
+
+/*mengupload repo yang belum ada di git hub
+git remote add 8ketik-nama-remote8 8alamat dari repo github8	:untuk mengupload repo ke github
+git push -u 8ketik-nama-remote8 8master8				        :untuk mengupload repo ke github
+git pull								                        :mengambil file dari github
+*/
+
+catatan tambahan:
+ketika masuk vim
+-pencet esc
+-ketik :q!
+-ketik :wq! --> untuk keluar sambil menyimpan perubahan
+
+8 8 :hanya untuk contoh
+mkdir 8ketik-nama-directory8 --> membuat folder baru
+cek akun yang terhubung di "Credential Manager"
