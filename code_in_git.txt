@@ -28,6 +28,7 @@ alias graph="git log --all --decorate --oneline --graph"		:snappath nya
 git merge 8ketik-nama-cabang8						            :untuk menggabungkan branch yang di inginkan
 git branch --merged							                    :untuk mengecek branch mana yang sudah di gabung
 git branch -d 8ketik-nama-branch8				            	:untuk menghapus branch yang sudah tidak di pakai (catatan: D besar beati paksa hapus)
+git checkout -b 8ketik-nama-branch8                             :membuat branch sekaligus menggunakan
 
 //menyingkronkan git hub dengan git
 git config --list						                       	:mengecek akun mana yang di pakai
